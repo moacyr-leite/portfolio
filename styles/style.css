@@ -1,3 +1,4 @@
+@import url("reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap");
 :root {
   --cor-primaria: #554a3a;
@@ -9,10 +10,7 @@
   --fonte-texto: "Montserrat", sans-serif;
   --font: #fff;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .cabecalho {
   background-color: var(--cor-primaria);
 }
@@ -82,7 +80,6 @@
 }
 .apresentacao__links__link:hover {
   color: var(--cor-select);
-  padding: 5% 3%;
 }
 .imagem {
   border-radius: 2rem;
