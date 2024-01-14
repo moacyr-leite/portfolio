@@ -1,0 +1,96 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap");
+
+:root {
+  --cor-primaria: #554a3a;
+  --cor-secundaria: #899049;
+  --cor-terciaria: #677d68;
+  --cor-select: #e2dad1;
+  /*b29f7d*/
+  --fonte-titulo: "Krona One", sans-serif;
+  --fonte-texto: "Montserrat", sans-serif;
+  --font: #fff;
+}
+.cabecalho {
+  background-color: var(--cor-primaria);
+}
+.cabecalho__navegacao {
+  display: flex;
+  padding: 1% 5%;
+  gap: 2%;
+}
+.cabecalho__navegacao__item {
+  font-size: 1rem;
+  font-family: var(--fonte-titulo);
+  text-decoration: none;
+  color: var(--cor-secundaria);
+}
+.cabecalho__navegacao__item:hover {
+  color: var(--cor-select);
+}
+.apresentacao {
+  display: flex;
+  padding: 1% 5%;
+  gap: 10%;
+  background-color: var(--cor-primaria);
+  color: var(--font);
+  height: 82vh;
+}
+.apresentacao__conteudo {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+}
+.apresentacao__conteudo__titulo {
+  font-family: var(--fonte-titulo);
+  text-align: justify;
+  font-size: 2.1rem;
+  margin: 1rem 1rem 1rem 0rem;
+  color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__destaque {
+  color: var(--cor-secundaria);
+}
+.apresentacao__subtitulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--cor-terciaria);
+}
+.apresentacao__conteudo__paragrafo {
+  font-family: var(--fonte-texto);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--font);
+}
+.apresentacao__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apresentacao__links__link {
+  text-decoration: none;
+  font-family: var(--fonte-titulo);
+  color: var(--cor-secundaria);
+  width: 12rem;
+  margin: 0.8rem;
+  border: 0.2rem solid var(--cor-terciaria);
+  padding: 4% 2%;
+  text-align: center;
+}
+.apresentacao__links__link:hover {
+  color: var(--cor-select);
+}
+.imagem {
+  border-radius: 2rem;
+  width: 50%;
+}
+.rodape {
+  display: flex;
+  color: var(--font);
+  background-color: var(--cor-terciaria);
+  font-family: var(--fonte-texto);
+  justify-content: center;
+  padding: 1%;
+}
