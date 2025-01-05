@@ -6,3 +6,14 @@ navegacao.innerHTML = `
     <a href="html/curiculum.html" class="cabecalho__navegacao__item">Currículo</a>
     <a href="html/myproject.html" class="cabecalho__navegacao__item"></a>
 `
+
+fetch('/api/webhook', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+        event: 'page_view',
+        timestamp: new Date().toISOString(),
+    }),
+});
